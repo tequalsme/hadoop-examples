@@ -19,6 +19,9 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
+/**
+ * First refactor of the original WordCount, removing deprecated API's and using Configured and Tool.
+ */
 public class WordCount extends Configured implements Tool {
     
     public static class Map extends Mapper<LongWritable, Text, Text, IntWritable> {

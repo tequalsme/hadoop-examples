@@ -13,6 +13,9 @@ import org.apache.hadoop.mapreduce.lib.output.TextOutputFormat;
 import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
+/**
+ * Second WordCount refactor, facilitating unit testing.
+ */
 public class WordCount extends Configured implements Tool {
 
     @Override

@@ -1,0 +1,17 @@
+References
+--------------------
+
+WordCount source:
+http://hadoop.apache.org/common/docs/current/mapred_tutorial.html#Example%3A+WordCount+v1.0
+
+Mockito for MR jobs:
+Hadoop: The Definitive Guide, Tom White
+
+Unit testing reused objects (i.e. Text) with Mockito:
+https://issues.apache.org/jira/browse/MAHOUT-730
+
+MRUnit:
+http://eriwen.com/hadoop/testing-with-mrunit/
+http://www.cloudera.com/blog/2009/07/debugging-mapreduce-programs-with-mrunit/
+http://incubator.apache.org/mrunit/
+

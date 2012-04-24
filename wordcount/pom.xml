@@ -13,7 +13,7 @@
     <artifactId>hadoop-wordcount</artifactId>
     <packaging>jar</packaging>
     <description>
-        Demonstrates testing a Map Reduce job.
+        Demonstrates various strategies for testing a Map Reduce job.
     </description>
     
     <dependencies>
