@@ -1,4 +1,4 @@
-package com.reardonsoftware.hadoop.wordcount.v2;
+package com.reardonsoftware.hadoop.wordcount;
 
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.conf.Configured;
@@ -14,7 +14,7 @@ import org.apache.hadoop.util.Tool;
 import org.apache.hadoop.util.ToolRunner;
 
 /**
- * Second WordCount refactor, facilitating unit testing.
+ * A refactored WordCount to facilitate unit testing.
  */
 public class WordCount extends Configured implements Tool {
 

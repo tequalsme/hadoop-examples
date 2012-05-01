@@ -1,4 +1,4 @@
-package com.reardonsoftware.hadoop.wordcount.v2;
+package com.reardonsoftware.hadoop.wordcount;
 
 import static org.junit.Assert.assertEquals;
 

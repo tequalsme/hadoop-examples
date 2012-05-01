@@ -1,4 +1,4 @@
-package com.reardonsoftware.hadoop.wordcount.v1;
+package com.reardonsoftware.hadoop.wordcount.originals;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -22,7 +22,7 @@ import org.apache.hadoop.util.ToolRunner;
 /**
  * First refactor of the original WordCount, removing deprecated API's and using Configured and Tool.
  */
-public class WordCount extends Configured implements Tool {
+public class WordCountV1 extends Configured implements Tool {
     
     public static class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
         private final static IntWritable one = new IntWritable(1);
@@ -55,7 +55,7 @@ public class WordCount extends Configured implements Tool {
         Configuration conf = getConf();
         
         Job job = new Job(conf);
-        job.setJarByClass(WordCount.class);
+        job.setJarByClass(WordCountV1.class);
         
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(IntWritable.class);
@@ -74,7 +74,7 @@ public class WordCount extends Configured implements Tool {
     }
 
     public static void main(String[] args) throws Exception {
-        int res = ToolRunner.run(new WordCount(), args);
+        int res = ToolRunner.run(new WordCountV1(), args);
         System.exit(res);
     }
 }

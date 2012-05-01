@@ -1,4 +1,4 @@
-package com.reardonsoftware.hadoop.wordcount.v2;
+package com.reardonsoftware.hadoop.wordcount;
 
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
@@ -12,8 +12,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer.Context;
 import org.junit.Before;
 import org.junit.Test;
-
-import com.reardonsoftware.hadoop.wordcount.v2.WordCountReducer;
 
 @SuppressWarnings({"unchecked", "rawtypes"})
 public class WordCountReducerTest {
