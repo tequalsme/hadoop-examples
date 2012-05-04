@@ -64,7 +64,7 @@ The first stage in any testing strategy is unit testing, and MapReduce is no dif
 
 There is one additional change I made to facilitate unit testing, which
 I'll discuss in the next section. The refactored version is in Listing 2.
-All source code for this article is available on [github](https://github.com/tequalsme/hadoop-examples) by cloning git@github.com:tequalsme/hadoop-examples.git.
+All source code for this article is available on [github](https://github.com/tequalsme/hadoop-examples).
 
     public class WordCount extends Configured implements Tool {
     
